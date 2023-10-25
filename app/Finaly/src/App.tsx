@@ -40,7 +40,7 @@ const PurpleCoffee = () => {
 
           type="primary"
           onClick={toggleSidebar}
-          style={{ position: 'absolute', top: 10, left: 10, zIndex: 1 }}
+          style={{ position: 'absolute', top: 10, left: 10, zIndex: 1, backgroundColor: 'pink', color: 'red' }}
         >
           {sidebarVisible ? 'Ocultar' : 'Sidebar'}
         </Button>
