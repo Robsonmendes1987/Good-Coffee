@@ -21,10 +21,13 @@ const PurpleCoffee = () => {
   const isWideVersion = window.innerWidth > 1024;
 
   return (
-    <div style={{ marginTop: '80px'}}>
-      <ListHeader />
+        <>
+        <ListHeader  />
+
+        
+
       <Row justify="center">
-        <Col span={14}>
+        {/* <Col>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -32,52 +35,66 @@ const PurpleCoffee = () => {
             style={{ position: 'absolute', bottom: 0, left: 0 }}
           >
 
+            
+
             <Image
-              style={{ width: '100%', height: 'auto' }}
+              style={{ width: '80%', height: 'auto' }}
               preview={false}
               src="image/blur-1.png"
               alt="light down"
             />
+
           </motion.div>
-          OLA 1
-          {/* <motion.div
+          
+
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.5, staggerChildren: 0.8 }}
             style={{ position: 'absolute', top: 0, right: 0 }}
-          > */}
-          OLA 2
+          >
+          
             <Image
               style={{ width: '100%', height: 'auto' }}
               preview={false}
               src="image/blur-2.png"
               alt=""
             />
-          {/* </motion.div> */}
-        </Col>
-        OLA 3
-        <Col span={14}>
-          {/* <motion.div
+            
+          </motion.div>
+        </Col> */}
+        
+        {/* <Col span={14}>
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.5, staggerChildren: 0.8 }}
             style={{ position: 'absolute', bottom: 0, width: '100%' }}
           >
+
+          
             <Image
               style={{ width: '100%', height: 'auto' }}
               preview={false}
               src="/image/Blur.svg"
               alt="light-mobile"
             />
-          </motion.div> */}
-        </Col>
-        <Col span={24}>
+          </motion.div>
+          
+        </Col> */}
+
+        
+        <Col span={14}>
+          <div>
+
+
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.5, staggerChildren: 0.8 }}
-            style={{ marginTop: '4rem' }}
+            style={{ marginTop: '4rem' }} 
           >
+            
             {!isWideVersion && (
               <Text
                 style={{ fontSize: '30px', fontWeight: '600', padding: '0 2rem', textAlign: 'center' }}
@@ -94,6 +111,7 @@ const PurpleCoffee = () => {
               whileTap={{ scale: 0.5 }}
               style={{ width: '100%' }}
             >
+              IMAGE TITLE
               <Image
                 style={{ width: '80%', height: '80%' }}
                 preview={false}
@@ -102,12 +120,16 @@ const PurpleCoffee = () => {
               />
             </motion.div>
             <div style={{  bottom: 1,  marginTop: '50px' }}>
-              <Lottie options={defaultOptions} height="70%" width="80%"/>
+              <Lottie options={defaultOptions} height="80%" width="80%"/>
             </div>
           </motion.div>
+          </div>
+
+          
         </Col>
       </Row>
-    </div>
+      </>
+
   );
 }
 
