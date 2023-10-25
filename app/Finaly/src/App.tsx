@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Row, Col, Image, Typography, Button } from 'antd';
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie';
 import Programing from './programing.json';
-import { ButtonCoffe } from './componente/ButtonCoffe';
 import ListHeader from './componente/ListHeader';
 import { MyFooter } from './componente/Footer';
 import Sidebar from './componente/Sidebar';
