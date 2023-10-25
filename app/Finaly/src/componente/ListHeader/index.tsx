@@ -27,6 +27,7 @@ export function ListHeader() {
 
   return (
     <>
+
       <Drawer
         width="320"
         title={
@@ -42,15 +43,18 @@ export function ListHeader() {
         onClose={onClose}
         visible={visible}
       >
-        <MenuList />
       </Drawer>
+
+
       <header
         style={{
           borderBottom: '1px solid #5a5454',
           marginBottom: '-2rem',
           borderColor: '#5a5454',
+          // backgroundColor: 'black'
         }}
       >
+
         <div
           style={{
             width: '100%',
@@ -59,7 +63,7 @@ export function ListHeader() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '2rem',
+            padding: '1rem',
             paddingBottom: '-1',
           }}
         >
@@ -72,14 +76,27 @@ export function ListHeader() {
               style={{ color: 'purple' }}
               onClick={showDrawer}
             >
+
               <Image src="/image/menu.png" width={30} height={30} />
             </Button>
             <ButtonCoffe />
           </Space>
         </div>
+
+        {/* Aqui, aplicamos estilos para centralizar o MenuList */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <MenuList />
+        </div>
       </header>
+
     </>
   );
-};
+}
 
 export default ListHeader;
