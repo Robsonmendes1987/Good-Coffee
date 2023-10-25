@@ -27,6 +27,7 @@ export function ListHeader() {
 
   return (
     <>
+
       <Drawer
         width="320"
         title={
@@ -50,6 +51,7 @@ export function ListHeader() {
           borderBottom: '1px solid #5a5454',
           marginBottom: '-2rem',
           borderColor: '#5a5454',
+          // backgroundColor: 'black'
         }}
       >
 
@@ -74,7 +76,7 @@ export function ListHeader() {
               style={{ color: 'purple' }}
               onClick={showDrawer}
             >
-              
+
               <Image src="/image/menu.png" width={30} height={30} />
             </Button>
             <ButtonCoffe />
@@ -92,6 +94,7 @@ export function ListHeader() {
           <MenuList />
         </div>
       </header>
+
     </>
   );
 }
